@@ -1,6 +1,7 @@
 window.onload = () => {
     AsideEvent.getInstance().addEventShowMenuButton();
     AsideEvent.getInstance().addEventMainChange();
+    InformationService.getInstance().loadInfo();
     InformationEvent.getInstance().addEventPhotoChangeClick();
     InformationEvent.getInstance().addEventPhotoChange();
     // InformationEvent.getInstance().addEventWriteAboutMe();
@@ -12,6 +13,6 @@ window.onload = () => {
     ToDoEvent.getInstance().addEventAddTodoClick();
     ToDoEvent.getInstance().addEventAddTodoKeyUp();
     TodoService.getInstance();
-    TodoService.getInstance().deleteTodoList();
+   
     
 }
